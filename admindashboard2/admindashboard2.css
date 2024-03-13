@@ -1,0 +1,292 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #c6c293; /* Adjust to match the design */
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+.dashboard-container {
+    width: 80%;
+    margin: 0 auto;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+    /* background-color: #f5f5dc; */
+}
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #fff;
+    /* background-color: #fff; */
+}
+
+.profile-icon{
+    cursor: pointer;
+}
+
+
+.profile-icon img {
+    width: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+}
+
+.dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.dashboard-nav li {
+    margin-left: 20px;
+}
+
+.dashboard-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0 40px;
+}
+
+.dashboard-nav a.active {
+    border-bottom: 3px solid rgb(0, 0, 0); /* White underline for the active page */
+}
+
+.dashboard-main {
+    border-bottom: 2px solid #fff;
+}
+
+.dashboard-title {
+    display: flex;
+    align-items: center;
+    background-color: #f4f4f4; /* Slightly lighter gray background */
+    border-radius: 10px; /* Rounded corners */
+    padding: 10px 20px; /* Add padding inside the rounded rectangle */
+    margin: 20px; 
+    /* Add some outer space if needed */
+}
+
+.dashboard-title img {
+    margin-right: 20px; /* Add some space between the image and the title */
+}
+
+.dashboard-title h1 {
+    color: #333;
+    flex-grow: 1; /* This will push the h1 to take up the remaining space */
+    text-align: right; /* Align the text to the right */
+}
+
+
+.dashboard-stats {
+    /* background-color: #dcdcdc; Light gray background */
+    border-radius: 10px; /* Rounded corners */
+    /* padding: 20px; */
+    display: flex;
+    justify-content: space-between; /* Space items between left and right */
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.stat-item {
+    background-color: #f4f4f4; /* Slightly lighter gray background */
+    border-radius: 10px; /* Rounded corners */
+    display: flex;
+    justify-content: space-between; /* Pushes the text and image to opposite sides */
+    align-items: center;
+    width: 30%; /* Adjust width to desired size, smaller than 100% */
+    padding: 20px; /* Adjust padding for internal spacing */
+    margin: 20px auto; /* Top and bottom margin 20px, auto centers the box horizontally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: adds shadow for depth */
+}
+
+
+.stat-text p,
+.stat-text .stat-number {
+    margin: 0; /* Removes default margin */
+    padding: 10px; /* Adds some padding */
+}
+
+.stat-text {
+    text-align: center; /* Align text to the left */
+}
+
+.stat-number {
+    font-size: 24px; /* Larger font size for the number */
+    font-weight: bold; /* Makes the number bold */
+}
+
+.stat-value img {
+    margin-left: 10px;
+}
+
+/* If you need the .stat-value to be at the end of the .stat-item */
+.stat-value {
+    margin-left: auto; /* Pushes the stat-value to the right */
+}
+
+
+.content {
+    padding: 20px;
+    /* background-color: #f5f5dc;  */
+    /* Light beige background */
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center the children */
+    border-bottom: 2px solid #fff;
+}
+
+.content-wrapper {
+    display: flex;
+    align-items: center; /* Vertically center all child elements */
+    max-width: 1200px; /* Set a max width for the content */
+    width: 100%; /* Full width */
+}
+
+.content-title {
+    flex-basis: 40%; /* Take up 40% of the wrapper */
+    font-size: 32px; /* Large font size for the heading */
+    color: #333; /* Dark grey color for the text */
+    text-align: center; /* Align text to the left */
+    margin-right: 20px; /* Add some space between the title and the list */
+}
+
+.content-list {
+    flex-basis: 60%; /* Take up the remaining 60% of the wrapper */
+    background-color: #fff; /* White background for the list */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    list-style-position: inside; /* Bullets inside the padding area */
+}
+
+.content-list li {
+    margin-bottom: 10px; /* Spacing between list items */
+    font-size: 20px; /* Larger font size for list text */
+}
+
+
+
+.contact {
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    justify-content: flex-start; 
+    /* Center children vertically */
+    /* height: calc(100vh - 60px);  */
+    /* Full viewport height minus the header height */
+    /* background-color: #f5f5dc; */
+     /* Light beige background */
+}
+
+.contact-title {
+    font-size: 32px; /* Large font size for the heading */
+    color: #333; /* Dark grey color for the text */
+    text-align: center; /* Center the text */
+    margin-bottom: 30px; /* Space below the title */
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around; /* Space out children */
+    width: 100%; /* Full width of the content area */
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center children horizontally */
+    padding: 10px;
+}
+
+/* Additional styles for the phone and email blocks if needed */
+.contact-info h2 {
+    text-align: center; /* Center the text of h2 */
+    margin-top: 10px; /* Space above the h2 */
+}
+
+
+/* ... existing styles ... */
+
+/* Style for the sidebar */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px; /* Start off-screen */
+    width: 250px;
+    height: 100%;
+    background-color: #c6c293;
+    overflow-x: hidden;
+    transition: 0.5s; /* Smooth transition for sliding in/out */
+    z-index: 2; /* Ensure the sidebar is above other content */
+}
+
+/* Style for sidebar content */
+.sidebar-content {
+    padding: 20px;
+}
+
+/* Style for the close button */
+.close-btn {
+    position: absolute;
+    top: 0;
+    right: 20px;
+    font-size: 36px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+.sidebar-profile-picture {
+    width: 80px; /* Adjust the size as needed */
+    height: 80px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    display: block; /* Centers the image in the sidebar */
+    margin: 0 auto 10px; /* Adds margin to the bottom */
+}
+
+.admin-email {
+    display: block; /* Ensures the <p> tag takes up the full width */
+    text-align: left; /* Centers the text */
+    margin-bottom: 5px; /* Space below the email */
+    /* border-bottom: 2px solid #fff; */
+}
+
+.sidebar-divider {
+    border: 0;
+    height: 2px; /* Height of the horizontal line */
+    background-color: #fff; /* Color of the horizontal line */
+    margin-bottom: 20px; /* Space below the horizontal line */
+}
+
+.sidebar-link {
+    font-size: 18px; /* Makes the text larger than the default */
+    color: #000000; /* Black color for the links */
+    text-decoration: none; /* Removes the underline from links */
+    display: block; /* Makes the link take the full width of its container */
+    padding: 10px 0; /* Adds vertical padding for spacing */
+    /* ... other styles ... */
+}
+
+.sidebar-nav li {
+    margin-bottom: 10px; /* Adds space between the list items */
+}
+
+.overlay {
+    display: none; /* Hidden by default */
+    position: fixed; /* Overlay is taken out of the normal flow and placed relative to the viewport */
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    top: 0;
+    left: 0;
+    background: rgba(255, 255, 255, 0.4); /* White color with opacity for shading */
+    z-index: 1; /* Ensure it's below the sidebar and above other content */
+}
+
+
+/* ... additional styles ... */
+
+/* You'll need to add more CSS to fully replicate the design in the image. */

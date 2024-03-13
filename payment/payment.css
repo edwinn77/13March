@@ -1,0 +1,148 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    /* margin: 0; */
+    padding: 0;
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.dashboard-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 2px solid #000000;
+    /* background-color: #fff; */
+  }
+  
+  .profile-icon{
+    cursor: pointer;
+  }
+  
+  
+  .profile-icon img {
+    width: 50px; /* Adjust size as needed */
+    border-radius: 50%;
+  }
+  
+  .dashboard-nav{
+    background-color: #ffffff;
+  }
+  .dashboard-nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    /* background-color: #ffffff; */
+  }
+  
+  .dashboard-nav li {
+    margin-left: 20px;
+  }
+  
+  .dashboard-nav a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    padding: 0 40px;
+  }
+  
+  .dashboard-nav a.active {
+    border-bottom: 3px solid rgb(0, 0, 0); /* White underline for the active page */
+  }
+
+.top-bar {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+}
+
+.top-bar .profile-icon img {
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    margin-right: 20px;
+}
+
+.table-container {
+    padding: 20px;
+}
+
+.table-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.entries-show select, .search-box input {
+    padding: 5px;
+    margin-left: 5px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead {
+    background-color: #f9f9f9;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+}
+
+.sort-icon {
+    cursor: pointer;
+}
+
+.verify-button {
+    padding: 5px 10px;
+    background-color: green;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.verify-button:hover {
+    opacity: 0.8;
+}
+
+.table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .table-info {
+    margin-left: 0px; /* Adjust as needed */
+  }
+  
+  .pagination {
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .pagination a.page-link {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+  }
+  
+  .pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }

@@ -1,0 +1,122 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.edit-profile-container {
+    display: flex;
+    /* min-height: 100vh; */
+    width: 80%;
+    margin: 10px auto;
+    border-radius: 10px;
+
+}
+
+.sidebar {
+    flex-basis: 30%;
+    background-color: #c6c293;
+    padding: 20px;
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+    color: #78754a;
+    font-size: 20px;
+    text-align: center;
+    border-radius:  10px 0 0 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+    position: relative; /* Needed for absolute positioning of children */
+    padding-bottom: 60px;
+}
+
+.back-button {
+    display: inline-block; /* Allows the use of padding and margin if needed */
+    position: absolute; /* Position the button at the bottom of sidebar */
+    bottom: 10px; /* Position from the bottom */
+    left: 10px; /* Position from the left */
+    background: none; /* No background color */
+    border: none; /* No border */
+    padding: 0; /* No padding */
+}
+
+.back-button img {
+    width: 50px; /* Adjust size as needed */
+    height: auto; /* Maintain aspect ratio */
+    cursor: pointer; /* Changes the cursor to indicate it's clickable */
+}
+
+.profile-form {
+    flex-basis: 70%;
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 0 10px 10px 0;
+    margin: auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.profile-form h2 {
+    color: #78754a;
+    margin: 0;
+}
+
+.profile-form p {
+    color: #a7a7a7;
+    margin-bottom: 1em;
+}
+
+.form-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-row label {
+    flex-basis: 20%;
+    text-align: right;
+    margin-right: 10px;
+}
+
+.form-row input {
+    flex-basis: 75%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    text-align: right;
+}
+
+.form-actions button {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #3E2723;
+    color: white;
+}
+
+.form-actions button:hover {
+    background-color:#5c4646;
+}
+
+/* Assuming you have similar styles for button elements, apply them to the anchor tag */
+.button {
+    text-decoration: none;
+    display: inline-block;
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #3E2723;
+    color: white;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #5c4646;
+}

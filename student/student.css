@@ -1,0 +1,136 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0;
+    padding: 0;
+  }
+
+  .container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.dashboard-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  border-bottom: 2px solid #000000;
+  /* background-color: #fff; */
+}
+
+.profile-icon{
+  cursor: pointer;
+}
+
+
+.profile-icon img {
+  width: 50px; /* Adjust size as needed */
+  border-radius: 50%;
+}
+
+.dashboard-nav{
+  background-color: #ffffff;
+}
+.dashboard-nav ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  /* background-color: #ffffff; */
+}
+
+.dashboard-nav li {
+  margin-left: 20px;
+}
+
+.dashboard-nav a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+  padding: 0 40px;
+}
+
+.dashboard-nav a.active {
+  border-bottom: 3px solid rgb(0, 0, 0); /* White underline for the active page */
+}
+  
+  nav {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
+  }
+  
+  nav a {
+    margin: 0 15px;
+    text-decoration: none;
+    color: #333333;
+  }
+  
+  .contact-table {
+    width: 80%;
+    margin: 20px auto;
+  }
+  
+  .table-controls {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .search-box label,
+  .table-controls label {
+    margin-right: 5px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  table thead {
+    background-color: #f2f2f2;
+  }
+  
+  table th,
+  table td {
+    text-align: left;
+    padding: 8px;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .sort-icon {
+    cursor: pointer;
+    /* margin-right: auto; */
+}
+  
+  .table-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+  }
+  
+  .table-info {
+    margin-left: 0px; /* Adjust as needed */
+  }
+  
+  .pagination {
+    margin-right: 20px; /* Adjust as needed */
+  }
+  
+  .pagination a.page-link {
+    margin: 0 5px;
+    text-decoration: none;
+    color: #333333;
+    padding: 5px 10px;
+  }
+  
+  .pagination a.active {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+  }
+  
+  /* You can add more styling as needed */
+  

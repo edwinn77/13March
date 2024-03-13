@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #c6c293;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin: 20px auto;
+}
+
+.profile-container { 
+    background-color: #c6c293;
+    border-radius: 10px;
+    padding: 20px;
+    /* box-shadow: 0 0 10px rgba(0,0,0,0.1); */
+    display: flex;
+    flex-direction: column;
+}
+
+.header {
+    background-color: #ffffff;
+    width: 50%;
+    /* padding: 10px; */
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    /* margin-bottom: 20px; */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px 20px;
+    margin: auto auto;
+}
+
+.avatar {
+    flex-shrink: 0;
+}
+
+.profile-pic {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.user-info {
+    margin-left: 10px;
+}
+
+.username {
+    font-size: 1.5em; /* Adjust size as needed */
+    font-weight: bold;
+}
+
+.role {
+    font-size: 1em; /* Adjust size as needed */
+    color: #a7a7a7; /* Adjust color as needed */
+}
+
+.personal-i{
+    border: 2px solid #000000; /* Adjust the color as needed */
+    border-radius: 10px; /* Rounds the corners */
+    padding: 20px; /* Provides internal spacing */
+    margin-top: 20px; /* Adds space above the .personal div */
+    margin-bottom: 20px; /* Adds space below the .personal div */
+}
+
+.personal-i h1{
+    color: black;
+    font-weight: bold;
+    size: 20px;
+}
+
+
+.personal-info {
+    background-color: #3E2723;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: row; /* Ensure the label and input are in one row */
+    align-items: center;
+    margin-bottom: 15px;
+    width: 100%; /* This ensures that each form group takes the full width */
+}
+
+.form-group label {
+    white-space: nowrap; /* Prevent the label from wrapping */
+    margin-right: 10px;
+    color: #c6c293;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group input[type="password"] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #a89c8c;
+    width: 80%; /* Example fixed width */
+    margin-left: auto; /* This will push the input to the right */
+}
+
+
+/* ... Remaining CSS */
+
+
+.save-btn {
+    background-color: #c6c293;
+    color: #3E2723;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    background-color: #ada981;
+}

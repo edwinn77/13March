@@ -1,0 +1,160 @@
+body {
+    font-family: 'Arial', sans-serif;
+    padding: 0;
+    box-sizing: border-box;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #c6c293;
+}
+
+main {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px;
+    padding: 20px;
+    background-color: #e9e9e9;
+}
+
+#profile {
+    width: 30%;
+    background-color: #e9e9e9;
+    margin-right: 0px;
+}
+
+.imageicon {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Adjust the gap as needed */
+    margin-bottom: 1rem;
+}
+
+.imageicon img {
+    width: 50px; /* Adjust the size as needed */
+    border-radius: 50%;
+}
+
+#profile h1 {
+    margin: 0;
+    padding: 0;
+    /* Adjust other styles as needed */
+}
+
+#recipe h2 {
+    font-size: 1.5em; /* Adjust the font-size as needed to make it smaller */
+    margin-top: 0.5em;
+}
+
+#recipe img {
+    width: 80%;
+    border-radius: 10px;
+
+}
+
+.ingredients {
+    list-style: none; /* Removes the default list styling */
+    padding: 0;
+}
+
+.ingredients li {
+    margin-bottom: 0.5em; /* Spacing between items */
+}
+
+.ingredients li:before {
+    content: "• "; /* This is a bullet point */
+    color: black; /* Bullet point color */
+    font-weight: bold; /* Makes the bullet point bold */
+}
+
+
+
+#ratings {
+    width: 40%;
+    background-color: #e9e9e9;
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column; 
+    margin-left: 0px;
+    /* Stacks flex items vertically */
+    /* align-items: flex-start; */
+     /* Aligns items to the start of the flex-direction, which is now vertical */
+}
+
+.star-rating {
+    text-align: center; /* Centers the stars */
+    margin-bottom: 20px; /* Adds some space below the stars */
+}
+
+.star-rating label {
+    display: block; /* Or inline-block */
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.stars img {
+    width: 40px; /* Adjust size as needed */
+    height: auto;
+}
+
+.ratings-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.criteria {
+    display: flex;
+    flex-direction: column; /* Stacks the children vertically */
+    align-items: center; /* Centers the children horizontally */
+    margin-bottom: 20px; /* Adds some space below each criterion */
+}
+
+.actions {
+    display: block; /* Enables flexbox layout */
+    justify-content: center; /* Distributes space between child elements */
+    align-items: center; /* Centers items vertically */
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: rgb(74, 31, 31);
+    margin: auto 0;
+    width: 30%;
+}
+
+.actions span {
+    font-size: 70px;
+}
+
+.progress-percentage {
+    display: block;
+    margin: 10px 0;
+}
+
+.buttons {
+    display: flex; /* Enables flexbox for buttons, aligning them side by side */
+    gap: 10px; /* Adds space between the buttons */
+    margin: auto 0 10px 70px;
+    /* margin-left: 70px; */
+    align-items: center;
+}
+
+.buttons button {
+    padding: 10px 20px;
+    cursor: pointer;
+    background-color: rgb(74, 31, 31);
+    color: white;
+    border-radius: 10px;
+}
+
+.buttons button:hover {
+    background-color: rgb(149, 102, 102);
+}
+
+.cooking-progress-container {
+    display: flex;
+    align-items: center; /* Centers the progress label and percentage vertically */
+}
+
+/* You might not need specific width adjustments unless you want to enforce a certain layout */
+

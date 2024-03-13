@@ -1,0 +1,112 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #c6c293; /* This is a shade of brown. Adjust the color as needed */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    margin: 0;
+    padding: 10px 0 0 0; /* Added some padding to the header */
+    /* background-color: #000000; */
+     /* Darker brown for the header */
+}
+
+.header-logo img {
+    height: 150px; /* Adjust the size as needed */
+}
+
+.header-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: flex-end; /* Align nav items to the right */
+    width: 100%; /* Take up remaining space */
+}
+
+.header-nav li {
+    font-weight: bold;
+    padding: 0 40px; /* Adjust spacing as needed */
+}
+
+.header-nav a {
+    text-decoration: none;
+    color: black;
+    display: block;
+}
+
+/* The rest of your styles remain unchanged */
+
+
+.trending-title {
+    font-family: 'Inria Serif', sans-serif;
+    font-size: 32px; /* Example size */
+    font-style: italic; /* Make text italic */
+    font-weight: bold; /* Make text bold, can also use numeric values like 700 */
+    color: #3E2723; /* Example color - dark brown */
+    text-align: center; /* Center the text */
+    margin-bottom: 20px; /* Adds space below the title */
+}
+
+
+.trending {
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+.package {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card {
+    width: 30%;
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+    border: 1px solid #ccc;
+    margin-bottom: 5px;
+}
+/*  */
+
+.card p {
+    font-family: 'Inria Serif', sans-serif;
+    color: #ffffff; /* Example color - white */
+    text-align: center; /* Center the text */
+    font-style: italic; /* Make text italic */
+    font-weight: bold; /* Make text bold, can also use numeric values like 700 */
+}
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .package {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .container {
+        width: 95%;
+    }
+}

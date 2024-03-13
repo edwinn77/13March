@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    width: 80%;
+    background-color: #c6c293;
+  }
+  .payment-details-container {
+    /* background-color: #F5F5DC; */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    margin: 20px auto;
+  }
+  .form-section {
+    width: 48%;
+  }
+  .qr-section {
+    width: 48%;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin: auto 30px;
+  }
+  .form-field {
+    margin-bottom: 10px;
+  }
+  .form-field input[type="text"],
+  .form-field input[type="file"],
+  .form-field input[type="button"],
+  .form-field input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
+  }
+  .qr-code {
+    max-width: 100%;
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .action-buttons button{
+    background-color: rgb(95, 47, 47);
+    color: white;
+    border-radius: 10px;
+    width: 100px;
+  }
+
+  .save-btn {
+    background-color: #3E2723;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-end;
+    margin-left: auto;
+    font-weight: bold;
+}
+
+.save-btn:hover {
+    background-color: #985347;
+}

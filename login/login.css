@@ -1,0 +1,137 @@
+body, html {
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: auto;
+    padding: 0;
+    background-color: #c6c293; /* This is a shade of brown. Adjust the color as needed */
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fff;
+    /* margin-left: 170px; */
+    /* margin: auto; */
+    padding: 10px 0; /* Added some padding to the header */
+    /* background-color: #8B4513; Darker brown for the header */
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 600px; /* Full height of the viewport */
+    max-width: 1200px;
+    max-height: 1800px; /* Sets a maximum height for the container */
+    margin: 10px auto; /* This will center the container vertically and horizontally */
+    position: relative; /* Allows absolute positioning relative to this container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    /* border-top: 2px solid #fff; */
+}
+
+
+.login-logo, .login-form {
+    flex: 1; /* Both children will take up equal space */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .login-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1; /* This ensures that .login-logo and .login-form have equal space */
+    /* Increase padding if needed to give more space around the logo */
+    /* background-color: #AE9B7E; */
+     /* Tan background */
+
+.login-logo img {
+    width: 500px; /* Allow the actual width of the image to dictate size */
+    max-width: none; /* Remove the max-width constraint */
+    height: 500px; /* Maintain aspect ratio */
+    max-height: 80%; /* Set a maximum height to be a percentage of the container */
+}
+
+.login-form {
+    background-color: #3E2723; /* Dark brown background */
+    color: #c6c293; /* White text */
+    padding: 20px; /* Padding inside the form */
+    display: flex;
+    height: 100%;
+    flex-direction: column; /* Aligns form elements vertically */
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.input-group input, .input-group button {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+    
+}
+
+.input-group label {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    display: block; /* Makes the label take up the full width */
+    margin-top: 20px; /* Adds space above the label */
+    margin-bottom: 10px; /* Space between the label and the input */
+    color: #c6c293; /* Adjust the color as needed */
+}
+
+.input-group button {
+    background-color: #c6c293; /* Olive background */
+    color: #fff; /* White text */
+    cursor: pointer;
+    margin-left: 10px;
+    margin-right: auto;
+    
+}
+
+.input-group button:hover {
+    background-color: #ada981 /* Dark olive background */
+}
+
+.login-form p {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.login-form a {
+    color: #FFD700; /* Gold color */
+}
+
+.login-form a:hover {
+    color: #f9f9f9; /* Gold color */
+}
+
+@media (max-width: 768px) {
+    .login-container {
+        flex-direction: column; /* Stack logo and form on smaller screens */
+        height: auto; /* Height is based on content size */
+        min-height: 100vh; /* Ensure it's at least as tall as the viewport */
+    }
+
+    .login-logo, .login-form {
+        width: 100%; /* Each child takes full width on smaller screens */
+        flex: none; /* Override the default flex behavior */
+    }
+}
